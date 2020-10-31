@@ -13,7 +13,6 @@
 import UIKit
 
 protocol LoginBusinessLogic {
-    func doSomething(request: Login.Something.Request)
     func startLoginRequest(request: LoginModel.Fetch.Request)
 }
 
@@ -29,15 +28,7 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
     //var name: String = ""
     
     // MARK: Do something
-    
-    func doSomething(request: Login.Something.Request) {
-        worker = LoginWorker()
-        worker?.doSomeWork()
         
-        let response = Login.Something.Response()
-        presenter?.presentSomething(response: response)
-    }
-    
     func startLoginRequest(request: LoginModel.Fetch.Request) {
         if worker == nil {
             worker = LoginWorker()

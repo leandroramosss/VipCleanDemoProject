@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		529DE965254DFBA900CEC107 /* LoginPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DE964254DFBA900CEC107 /* LoginPresenterSpec.swift */; };
 		52E563ED254B6B4F0089BA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E563EC254B6B4F0089BA90 /* AppDelegate.swift */; };
 		52E563EF254B6B4F0089BA90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E563EE254B6B4F0089BA90 /* SceneDelegate.swift */; };
-		52E563F1254B6B4F0089BA90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E563F0254B6B4F0089BA90 /* ViewController.swift */; };
 		52E563F4254B6B4F0089BA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E563F2254B6B4F0089BA90 /* Main.storyboard */; };
 		52E563F6254B6B520089BA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E563F5254B6B520089BA90 /* Assets.xcassets */; };
 		52E563F9254B6B520089BA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E563F7254B6B520089BA90 /* LaunchScreen.storyboard */; };
@@ -25,6 +25,9 @@
 		52E5643C254CD9850089BA90 /* Constants+Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5643B254CD9850089BA90 /* Constants+Urls.swift */; };
 		52E56442254D7C170089BA90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56441254D7C170089BA90 /* User.swift */; };
 		52E5644A254D868B0089BA90 /* Constants+Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56449254D868B0089BA90 /* Constants+Identifiers.swift */; };
+		52E56460254DB72C0089BA90 /* LoginViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5645F254DB72C0089BA90 /* LoginViewControllerSpec.swift */; };
+		52E56468254DC3380089BA90 /* LoginInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56467254DC3380089BA90 /* LoginInteractorSpec.swift */; };
+		52E56470254DE4BC0089BA90 /* LoginWorkerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5646F254DE4BC0089BA90 /* LoginWorkerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		529DE964254DFBA900CEC107 /* LoginPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterSpec.swift; sourceTree = "<group>"; };
 		52E563E9254B6B4F0089BA90 /* VIPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E563EC254B6B4F0089BA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52E563EE254B6B4F0089BA90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52E563F0254B6B4F0089BA90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52E563F3254B6B4F0089BA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52E563F5254B6B520089BA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E563F8254B6B520089BA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +72,9 @@
 		52E5643B254CD9850089BA90 /* Constants+Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Urls.swift"; sourceTree = "<group>"; };
 		52E56441254D7C170089BA90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		52E56449254D868B0089BA90 /* Constants+Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Identifiers.swift"; sourceTree = "<group>"; };
+		52E5645F254DB72C0089BA90 /* LoginViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpec.swift; sourceTree = "<group>"; };
+		52E56467254DC3380089BA90 /* LoginInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorSpec.swift; sourceTree = "<group>"; };
+		52E5646F254DE4BC0089BA90 /* LoginWorkerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		529DE969254E000000CEC107 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52E563EC254B6B4F0089BA90 /* AppDelegate.swift */,
+				52E563EE254B6B4F0089BA90 /* SceneDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		52E563E0254B6B4F0089BA90 = {
 			isa = PBXGroup;
 			children = (
@@ -119,10 +134,8 @@
 		52E563EB254B6B4F0089BA90 /* VIPLogin */ = {
 			isa = PBXGroup;
 			children = (
+				529DE969254E000000CEC107 /* Helpers */,
 				52E5641F254B6C4B0089BA90 /* Scenes */,
-				52E563EC254B6B4F0089BA90 /* AppDelegate.swift */,
-				52E563EE254B6B4F0089BA90 /* SceneDelegate.swift */,
-				52E563F0254B6B4F0089BA90 /* ViewController.swift */,
 				52E563F2254B6B4F0089BA90 /* Main.storyboard */,
 				52E563F5254B6B520089BA90 /* Assets.xcassets */,
 				52E563F7254B6B520089BA90 /* LaunchScreen.storyboard */,
@@ -134,6 +147,7 @@
 		52E56402254B6B520089BA90 /* VIPLoginTests */ = {
 			isa = PBXGroup;
 			children = (
+				52E56453254DB6AE0089BA90 /* Login */,
 				52E56403254B6B520089BA90 /* VIPLoginTests.swift */,
 				52E56405254B6B520089BA90 /* Info.plist */,
 			);
@@ -188,6 +202,17 @@
 				52E56441254D7C170089BA90 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		52E56453254DB6AE0089BA90 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				52E5645F254DB72C0089BA90 /* LoginViewControllerSpec.swift */,
+				52E56467254DC3380089BA90 /* LoginInteractorSpec.swift */,
+				52E5646F254DE4BC0089BA90 /* LoginWorkerSpec.swift */,
+				529DE964254DFBA900CEC107 /* LoginPresenterSpec.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +352,6 @@
 				52E56429254B6C770089BA90 /* LoginRouter.swift in Sources */,
 				52E56437254CD9450089BA90 /* Costants.swift in Sources */,
 				52E5642B254B6C770089BA90 /* LoginViewController.swift in Sources */,
-				52E563F1254B6B4F0089BA90 /* ViewController.swift in Sources */,
 				52E563ED254B6B4F0089BA90 /* AppDelegate.swift in Sources */,
 				52E56442254D7C170089BA90 /* User.swift in Sources */,
 				52E563EF254B6B4F0089BA90 /* SceneDelegate.swift in Sources */,
@@ -341,6 +365,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E56404254B6B520089BA90 /* VIPLoginTests.swift in Sources */,
+				52E56460254DB72C0089BA90 /* LoginViewControllerSpec.swift in Sources */,
+				529DE965254DFBA900CEC107 /* LoginPresenterSpec.swift in Sources */,
+				52E56470254DE4BC0089BA90 /* LoginWorkerSpec.swift in Sources */,
+				52E56468254DC3380089BA90 /* LoginInteractorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -493,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -511,6 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDDP3J8FL2;
 				INFOPLIST_FILE = VIPLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLogin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -530,6 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDDP3J8FL2;
 				INFOPLIST_FILE = VIPLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,7 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLogin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

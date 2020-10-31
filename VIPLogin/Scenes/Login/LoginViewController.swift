@@ -13,7 +13,6 @@
 import UIKit
 
 protocol LoginDisplayLogic: class {
-    func displaySomething(viewModel: Login.Something.ViewModel)
     func getData(viewModel: LoginModel.Fetch.ViewModel)
     func displayErrorAlert(error: String)
 }
@@ -65,23 +64,13 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
         doLogin()
     }
     
     // MARK: Do something
     
     //@IBOutlet weak var nameTextField: UITextField!
-    
-    func doSomething() {
-        let request = Login.Something.Request()
-        interactor?.doSomething(request: request)
-    }
-    
-    func displaySomething(viewModel: Login.Something.ViewModel) {
-        //nameTextField.text = viewModel.name
-    }
-    
+        
     func doLogin() {
         let request = LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "123456")
         interactor?.startLoginRequest(request: request)
@@ -89,7 +78,7 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     
     func getData(viewModel: LoginModel.Fetch.ViewModel) {
         let token = viewModel.token
-//        print(token)
+        print(token)
     }
     
     func displayErrorAlert(error: String) {

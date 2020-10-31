@@ -16,8 +16,6 @@ typealias LoginResponseSuccess = (_ response: LoginModel.Fetch.Response) -> ()
 typealias LoginResponseFailure = (_ response: String) -> ()
 
 class LoginWorker {
-    func doSomeWork() {
-    }
     
     func performLogin(requestData: LoginModel.Fetch.Request, urlRequest: URL) -> URLRequest {
         var request = URLRequest(url: urlRequest)

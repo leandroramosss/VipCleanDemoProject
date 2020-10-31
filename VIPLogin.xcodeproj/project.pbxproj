@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52E563ED254B6B4F0089BA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E563EC254B6B4F0089BA90 /* AppDelegate.swift */; };
+		52E563EF254B6B4F0089BA90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E563EE254B6B4F0089BA90 /* SceneDelegate.swift */; };
+		52E563F1254B6B4F0089BA90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E563F0254B6B4F0089BA90 /* ViewController.swift */; };
+		52E563F4254B6B4F0089BA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E563F2254B6B4F0089BA90 /* Main.storyboard */; };
+		52E563F6254B6B520089BA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E563F5254B6B520089BA90 /* Assets.xcassets */; };
+		52E563F9254B6B520089BA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E563F7254B6B520089BA90 /* LaunchScreen.storyboard */; };
+		52E56404254B6B520089BA90 /* VIPLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56403254B6B520089BA90 /* VIPLoginTests.swift */; };
+		52E5640F254B6B520089BA90 /* VIPLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5640E254B6B520089BA90 /* VIPLoginUITests.swift */; };
+		52E56427254B6C770089BA90 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56421254B6C770089BA90 /* LoginPresenter.swift */; };
+		52E56428254B6C770089BA90 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56422254B6C770089BA90 /* LoginWorker.swift */; };
+		52E56429254B6C770089BA90 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56423254B6C770089BA90 /* LoginRouter.swift */; };
+		52E5642A254B6C770089BA90 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56424254B6C770089BA90 /* LoginModels.swift */; };
+		52E5642B254B6C770089BA90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56425254B6C770089BA90 /* LoginViewController.swift */; };
+		52E5642C254B6C770089BA90 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56426254B6C770089BA90 /* LoginInteractor.swift */; };
+		52E56437254CD9450089BA90 /* Costants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56436254CD9450089BA90 /* Costants.swift */; };
+		52E5643C254CD9850089BA90 /* Constants+Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5643B254CD9850089BA90 /* Constants+Urls.swift */; };
+		52E56442254D7C170089BA90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56441254D7C170089BA90 /* User.swift */; };
+		52E5644A254D868B0089BA90 /* Constants+Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E56449254D868B0089BA90 /* Constants+Identifiers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52E56400254B6B520089BA90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E563E1254B6B4F0089BA90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E563E8254B6B4F0089BA90;
+			remoteInfo = VIPLogin;
+		};
+		52E5640B254B6B520089BA90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E563E1254B6B4F0089BA90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E563E8254B6B4F0089BA90;
+			remoteInfo = VIPLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52E563E9254B6B4F0089BA90 /* VIPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E563EC254B6B4F0089BA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52E563EE254B6B4F0089BA90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52E563F0254B6B4F0089BA90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52E563F3254B6B4F0089BA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52E563F5254B6B520089BA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52E563F8254B6B520089BA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52E563FA254B6B520089BA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E563FF254B6B520089BA90 /* VIPLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E56403254B6B520089BA90 /* VIPLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPLoginTests.swift; sourceTree = "<group>"; };
+		52E56405254B6B520089BA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E5640A254B6B520089BA90 /* VIPLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E5640E254B6B520089BA90 /* VIPLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPLoginUITests.swift; sourceTree = "<group>"; };
+		52E56410254B6B520089BA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E56421254B6C770089BA90 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		52E56422254B6C770089BA90 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		52E56423254B6C770089BA90 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		52E56424254B6C770089BA90 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		52E56425254B6C770089BA90 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		52E56426254B6C770089BA90 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		52E56436254CD9450089BA90 /* Costants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Costants.swift; sourceTree = "<group>"; };
+		52E5643B254CD9850089BA90 /* Constants+Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Urls.swift"; sourceTree = "<group>"; };
+		52E56441254D7C170089BA90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52E56449254D868B0089BA90 /* Constants+Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Identifiers.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52E563E6254B6B4F0089BA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E563FC254B6B520089BA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E56407254B6B520089BA90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52E563E0254B6B4F0089BA90 = {
+			isa = PBXGroup;
+			children = (
+				52E563EB254B6B4F0089BA90 /* VIPLogin */,
+				52E56402254B6B520089BA90 /* VIPLoginTests */,
+				52E5640D254B6B520089BA90 /* VIPLoginUITests */,
+				52E563EA254B6B4F0089BA90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52E563EA254B6B4F0089BA90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E563E9254B6B4F0089BA90 /* VIPLogin.app */,
+				52E563FF254B6B520089BA90 /* VIPLoginTests.xctest */,
+				52E5640A254B6B520089BA90 /* VIPLoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52E563EB254B6B4F0089BA90 /* VIPLogin */ = {
+			isa = PBXGroup;
+			children = (
+				52E5641F254B6C4B0089BA90 /* Scenes */,
+				52E563EC254B6B4F0089BA90 /* AppDelegate.swift */,
+				52E563EE254B6B4F0089BA90 /* SceneDelegate.swift */,
+				52E563F0254B6B4F0089BA90 /* ViewController.swift */,
+				52E563F2254B6B4F0089BA90 /* Main.storyboard */,
+				52E563F5254B6B520089BA90 /* Assets.xcassets */,
+				52E563F7254B6B520089BA90 /* LaunchScreen.storyboard */,
+				52E563FA254B6B520089BA90 /* Info.plist */,
+			);
+			path = VIPLogin;
+			sourceTree = "<group>";
+		};
+		52E56402254B6B520089BA90 /* VIPLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				52E56403254B6B520089BA90 /* VIPLoginTests.swift */,
+				52E56405254B6B520089BA90 /* Info.plist */,
+			);
+			path = VIPLoginTests;
+			sourceTree = "<group>";
+		};
+		52E5640D254B6B520089BA90 /* VIPLoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52E5640E254B6B520089BA90 /* VIPLoginUITests.swift */,
+				52E56410254B6B520089BA90 /* Info.plist */,
+			);
+			path = VIPLoginUITests;
+			sourceTree = "<group>";
+		};
+		52E5641F254B6C4B0089BA90 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				52E56440254D7BEB0089BA90 /* Models */,
+				52E56435254CD92B0089BA90 /* Constants */,
+				52E56420254B6C520089BA90 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		52E56420254B6C520089BA90 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				52E56421254B6C770089BA90 /* LoginPresenter.swift */,
+				52E56422254B6C770089BA90 /* LoginWorker.swift */,
+				52E56423254B6C770089BA90 /* LoginRouter.swift */,
+				52E56424254B6C770089BA90 /* LoginModels.swift */,
+				52E56425254B6C770089BA90 /* LoginViewController.swift */,
+				52E56426254B6C770089BA90 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		52E56435254CD92B0089BA90 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				52E56436254CD9450089BA90 /* Costants.swift */,
+				52E5643B254CD9850089BA90 /* Constants+Urls.swift */,
+				52E56449254D868B0089BA90 /* Constants+Identifiers.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		52E56440254D7BEB0089BA90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52E56441254D7C170089BA90 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E563E8254B6B4F0089BA90 /* VIPLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E56413254B6B520089BA90 /* Build configuration list for PBXNativeTarget "VIPLogin" */;
+			buildPhases = (
+				52E563E5254B6B4F0089BA90 /* Sources */,
+				52E563E6254B6B4F0089BA90 /* Frameworks */,
+				52E563E7254B6B4F0089BA90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPLogin;
+			productName = VIPLogin;
+			productReference = 52E563E9254B6B4F0089BA90 /* VIPLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52E563FE254B6B520089BA90 /* VIPLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E56416254B6B520089BA90 /* Build configuration list for PBXNativeTarget "VIPLoginTests" */;
+			buildPhases = (
+				52E563FB254B6B520089BA90 /* Sources */,
+				52E563FC254B6B520089BA90 /* Frameworks */,
+				52E563FD254B6B520089BA90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E56401254B6B520089BA90 /* PBXTargetDependency */,
+			);
+			name = VIPLoginTests;
+			productName = VIPLoginTests;
+			productReference = 52E563FF254B6B520089BA90 /* VIPLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52E56409254B6B520089BA90 /* VIPLoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E56419254B6B520089BA90 /* Build configuration list for PBXNativeTarget "VIPLoginUITests" */;
+			buildPhases = (
+				52E56406254B6B520089BA90 /* Sources */,
+				52E56407254B6B520089BA90 /* Frameworks */,
+				52E56408254B6B520089BA90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E5640C254B6B520089BA90 /* PBXTargetDependency */,
+			);
+			name = VIPLoginUITests;
+			productName = VIPLoginUITests;
+			productReference = 52E5640A254B6B520089BA90 /* VIPLoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E563E1254B6B4F0089BA90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					52E563E8254B6B4F0089BA90 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					52E563FE254B6B520089BA90 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 52E563E8254B6B4F0089BA90;
+					};
+					52E56409254B6B520089BA90 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 52E563E8254B6B4F0089BA90;
+					};
+				};
+			};
+			buildConfigurationList = 52E563E4254B6B4F0089BA90 /* Build configuration list for PBXProject "VIPLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52E563E0254B6B4F0089BA90;
+			productRefGroup = 52E563EA254B6B4F0089BA90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E563E8254B6B4F0089BA90 /* VIPLogin */,
+				52E563FE254B6B520089BA90 /* VIPLoginTests */,
+				52E56409254B6B520089BA90 /* VIPLoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E563E7254B6B4F0089BA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E563F9254B6B520089BA90 /* LaunchScreen.storyboard in Resources */,
+				52E563F6254B6B520089BA90 /* Assets.xcassets in Resources */,
+				52E563F4254B6B4F0089BA90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E563FD254B6B520089BA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E56408254B6B520089BA90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E563E5254B6B4F0089BA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E56428254B6C770089BA90 /* LoginWorker.swift in Sources */,
+				52E5644A254D868B0089BA90 /* Constants+Identifiers.swift in Sources */,
+				52E56427254B6C770089BA90 /* LoginPresenter.swift in Sources */,
+				52E5642A254B6C770089BA90 /* LoginModels.swift in Sources */,
+				52E56429254B6C770089BA90 /* LoginRouter.swift in Sources */,
+				52E56437254CD9450089BA90 /* Costants.swift in Sources */,
+				52E5642B254B6C770089BA90 /* LoginViewController.swift in Sources */,
+				52E563F1254B6B4F0089BA90 /* ViewController.swift in Sources */,
+				52E563ED254B6B4F0089BA90 /* AppDelegate.swift in Sources */,
+				52E56442254D7C170089BA90 /* User.swift in Sources */,
+				52E563EF254B6B4F0089BA90 /* SceneDelegate.swift in Sources */,
+				52E5643C254CD9850089BA90 /* Constants+Urls.swift in Sources */,
+				52E5642C254B6C770089BA90 /* LoginInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E563FB254B6B520089BA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E56404254B6B520089BA90 /* VIPLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E56406254B6B520089BA90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E5640F254B6B520089BA90 /* VIPLoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52E56401254B6B520089BA90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E563E8254B6B4F0089BA90 /* VIPLogin */;
+			targetProxy = 52E56400254B6B520089BA90 /* PBXContainerItemProxy */;
+		};
+		52E5640C254B6B520089BA90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E563E8254B6B4F0089BA90 /* VIPLogin */;
+			targetProxy = 52E5640B254B6B520089BA90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52E563F2254B6B4F0089BA90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E563F3254B6B4F0089BA90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52E563F7254B6B520089BA90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E563F8254B6B520089BA90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52E56411254B6B520089BA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52E56412254B6B520089BA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52E56414254B6B520089BA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDDP3J8FL2;
+				INFOPLIST_FILE = VIPLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52E56415254B6B520089BA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDDP3J8FL2;
+				INFOPLIST_FILE = VIPLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52E56417254B6B520089BA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDDP3J8FL2;
+				INFOPLIST_FILE = VIPLoginTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPLogin.app/VIPLogin";
+			};
+			name = Debug;
+		};
+		52E56418254B6B520089BA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDDP3J8FL2;
+				INFOPLIST_FILE = VIPLoginTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPLogin.app/VIPLogin";
+			};
+			name = Release;
+		};
+		52E5641A254B6B520089BA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDDP3J8FL2;
+				INFOPLIST_FILE = VIPLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPLogin;
+			};
+			name = Debug;
+		};
+		52E5641B254B6B520089BA90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDDP3J8FL2;
+				INFOPLIST_FILE = VIPLoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "leandro-ramos.VIPLoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPLogin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E563E4254B6B4F0089BA90 /* Build configuration list for PBXProject "VIPLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E56411254B6B520089BA90 /* Debug */,
+				52E56412254B6B520089BA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E56413254B6B520089BA90 /* Build configuration list for PBXNativeTarget "VIPLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E56414254B6B520089BA90 /* Debug */,
+				52E56415254B6B520089BA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E56416254B6B520089BA90 /* Build configuration list for PBXNativeTarget "VIPLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E56417254B6B520089BA90 /* Debug */,
+				52E56418254B6B520089BA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E56419254B6B520089BA90 /* Build configuration list for PBXNativeTarget "VIPLoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E5641A254B6B520089BA90 /* Debug */,
+				52E5641B254B6B520089BA90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E563E1254B6B4F0089BA90 /* Project object */;
+}

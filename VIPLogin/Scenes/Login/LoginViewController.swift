@@ -15,6 +15,7 @@ import UIKit
 protocol LoginDisplayLogic: class {
     func getData(viewModel: LoginModel.Fetch.ViewModel)
     func displayErrorAlert(error: String)
+    func transitionToMain()
 }
 
 class LoginViewController: UIViewController, LoginDisplayLogic {
@@ -64,19 +65,17 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        doLogin()
     }
     
     // MARK: Do something
     
     //@IBOutlet weak var nameTextField: UITextField!
     @IBAction func buttonAction(_ sender: Any) {
-//        self.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: self)
         doLogin()
     }
     
     func doLogin() {
-        let request = LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "1234567")
+        let request = LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "123456")
         interactor?.startLoginRequest(request: request)
     }
     
@@ -86,9 +85,13 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     }
     
     func displayErrorAlert(error: String) {
-        let alert = UIAlertController(title: "erro", message: error, preferredStyle: .alert)
+        let alert = UIAlertController(title: "error", message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func transitionToMain() {
+        self.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: self)
     }
 
 }

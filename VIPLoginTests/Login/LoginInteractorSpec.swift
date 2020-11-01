@@ -41,6 +41,7 @@ class LoginInteractorSpec: XCTestCase {
     class LoginPresentationLogicSpy: LoginPresentationLogic {
         var presentLoginIsCalled = false
         var presentLoginErrorIsCalled = false
+        var presentMainPage = false
         
         func presentLogin(response: LoginModel.Fetch.Response) {
             presentLoginIsCalled = true
@@ -50,6 +51,11 @@ class LoginInteractorSpec: XCTestCase {
         func presentLoginError(error: String) {
             presentLoginErrorIsCalled = true
         }
+        
+        func showMainPageAfterLogin() {
+            presentMainPage = true
+        }
+        
     }
     
     func testPerformLogin() {
@@ -65,6 +71,7 @@ class LoginInteractorSpec: XCTestCase {
         
         interactorSpy.startLoginRequest(request: LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "123"))
     }
+    
     
 }
 

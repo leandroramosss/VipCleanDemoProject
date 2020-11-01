@@ -38,4 +38,10 @@ class LoginWorkerSpec: XCTestCase {
         } completionFailure: { (failure) in}
         wait(for: [expetation], timeout: 30.0)
     }
+    
+    func testValidateEmail() {
+        let isValid = sut.validateEmail(email: "leandro@mailinator.com")
+        
+        XCTAssertTrue(isValid)
+    }
 }

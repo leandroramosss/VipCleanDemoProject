@@ -24,6 +24,7 @@ class LoginPresenterSpec: XCTestCase {
     class LoginDisplayLogicSpy: LoginDisplayLogic {
         var getDataIsCalled = false
         var displayErrorIsCalled = false
+        var displayMainPage = false
         
         func getData(viewModel: LoginModel.Fetch.ViewModel) {
             getDataIsCalled = true
@@ -31,6 +32,10 @@ class LoginPresenterSpec: XCTestCase {
         
         func displayErrorAlert(error: String) {
             displayErrorIsCalled = true
+        }
+        
+        func transitionToMain() {
+            displayMainPage = true
         }
         
     }
@@ -50,6 +55,14 @@ class LoginPresenterSpec: XCTestCase {
         
         sut.presentLoginError(error: "error")
         XCTAssertTrue(viewControllerSpy.displayErrorIsCalled)
+    }
+    
+    func testTransitionToMain() {
+        let viewControllerSpy = LoginDisplayLogicSpy()
+        sut.viewController = viewControllerSpy
+        
+        sut.showMainPageAfterLogin()
+        XCTAssertTrue(viewControllerSpy.displayMainPage)
     }
     
 }

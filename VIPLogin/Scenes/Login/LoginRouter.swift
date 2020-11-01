@@ -14,6 +14,7 @@ import UIKit
 
 @objc protocol LoginRoutingLogic {
     func routeToRegister(segue: UIStoryboardSegue?)
+    func simpleRouterToRegister()
 }
 
 protocol LoginDataPassing {
@@ -41,7 +42,10 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing {
     }
     
     // MARK: Navigation
-    
+    func simpleRouterToRegister() {
+        viewController?.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: viewController)
+    }
+
     func navigateToRegister(source: LoginViewController, destination: RegisterViewController) {
         source.show(destination, sender: nil)
     }

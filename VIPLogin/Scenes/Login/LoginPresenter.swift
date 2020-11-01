@@ -15,6 +15,7 @@ import UIKit
 protocol LoginPresentationLogic {
     func presentLogin(response: LoginModel.Fetch.Response)
     func presentLoginError(error: String)
+    func showMainPageAfterLogin()
 }
 
 class LoginPresenter: LoginPresentationLogic {
@@ -35,5 +36,10 @@ class LoginPresenter: LoginPresentationLogic {
     func presentLoginError(error: String) {
         viewController?.displayErrorAlert(error: error)
     }
+    
+    func showMainPageAfterLogin() {
+        viewController?.transitionToMain()
+    }
+
 
 }

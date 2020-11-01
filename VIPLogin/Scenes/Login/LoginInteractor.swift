@@ -27,7 +27,7 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
     var worker: LoginWorker?
     
     // MARK: Do something
-        
+            
     func startLoginRequest(request: LoginModel.Fetch.Request) {
         if worker == nil {
             worker = LoginWorker()
@@ -39,13 +39,11 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
             worker?.login(requestData: request, completionSuccess: { (response) in
                 self.userData = response.user
                 DispatchQueue.main.async {
-                    
-                    if response.user?.statusCode == 400 {
-                        self.presenter?.presentLoginError(error: "The Password is incorrect")
-                        print("error")
-                    } else {
+                    if response.user?.statusCode == 200 {
                         self.presenter?.presentLogin(response: response)
-                        print("success")
+                        self.presenter?.showMainPageAfterLogin()
+                    } else {
+                        self.presenter?.presentLoginError(error: "Login or password incorrect.")
                     }
                 }
             }, completionFailure: { (error) in

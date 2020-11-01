@@ -25,6 +25,10 @@ class LoginWorker {
         return request
     }
     
+    func validateEmail(email: String) -> Bool {
+        return email.isValidEmail(regex: Constants.Validations.emailRegex)
+    }
+    
     func login(requestData: LoginModel.Fetch.Request, completionSuccess: @escaping LoginResponseSuccess, completionFailure: @escaping LoginResponseFailure) {
         guard let urlRequest = URL(string: Constants.Urls.login) else {
             return

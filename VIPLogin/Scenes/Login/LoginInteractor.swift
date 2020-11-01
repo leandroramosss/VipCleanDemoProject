@@ -33,18 +33,31 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
             worker = LoginWorker()
         }
         
-        worker?.login(requestData: request, completionSuccess: { (response) in
-            self.userData = response.user
-            DispatchQueue.main.async {
-                self.presenter?.presentLogin(response: response)
-                print("success")
-            }
-        }, completionFailure: { (error) in
-            DispatchQueue.main.async {
-                self.presenter?.presentLoginError(error: error)
-                print("failure")
-            }
-        })
+        guard let emailValidation = worker?.validateEmail(email: request.email ?? "") else { return }
         
+        if emailValidation {
+            worker?.login(requestData: request, completionSuccess: { (response) in
+                self.userData = response.user
+                DispatchQueue.main.async {
+                    
+                    if response.user?.statusCode == 400 {
+                        self.presenter?.presentLoginError(error: "The Password is incorrect")
+                        print("error")
+                    } else {
+                        self.presenter?.presentLogin(response: response)
+                        print("success")
+                    }
+                }
+            }, completionFailure: { (error) in
+                DispatchQueue.main.async {
+                    self.presenter?.presentLoginError(error: error)
+                    print("failure")
+                }
+            })
+        } else {
+            DispatchQueue.main.async {
+                self.presenter?.presentLoginError(error: "usuário ou senha inválida")
+            }
+        }
     }
 }

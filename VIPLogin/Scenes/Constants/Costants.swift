@@ -10,4 +10,5 @@ import Foundation
 struct Constants {
     struct Urls { }
     struct Indentifiers { }
+    struct Validations { }
 }

@@ -64,18 +64,19 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        doLogin()
+//        doLogin()
     }
     
     // MARK: Do something
     
     //@IBOutlet weak var nameTextField: UITextField!
     @IBAction func buttonAction(_ sender: Any) {
-        self.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: self)
+//        self.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: self)
+        doLogin()
     }
     
     func doLogin() {
-        let request = LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "123456")
+        let request = LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "1234567")
         interactor?.startLoginRequest(request: request)
     }
     

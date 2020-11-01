@@ -12,30 +12,26 @@
 
 import UIKit
 
-protocol RegisterBusinessLogic
-{
-  func doSomething(request: Register.Something.Request)
+protocol RegisterBusinessLogic {
+    func doSomething(request: Register.Something.Request)
 }
 
-protocol RegisterDataStore
-{
-  //var name: String { get set }
+protocol RegisterDataStore {
+    var userData: User? { get set }
 }
 
-class RegisterInteractor: RegisterBusinessLogic, RegisterDataStore
-{
-  var presenter: RegisterPresentationLogic?
-  var worker: RegisterWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: Register.Something.Request)
-  {
-    worker = RegisterWorker()
-    worker?.doSomeWork()
+class RegisterInteractor: RegisterBusinessLogic, RegisterDataStore {
+    var presenter: RegisterPresentationLogic?
+    var worker: RegisterWorker?
+    var userData: User?
     
-    let response = Register.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+    // MARK: Do something
+    
+    func doSomething(request: Register.Something.Request) {
+        worker = RegisterWorker()
+        worker?.doSomeWork()
+        
+        let response = Register.Something.Response()
+        presenter?.presentSomething(response: response)
+    }
 }

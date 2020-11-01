@@ -17,7 +17,7 @@ protocol LoginBusinessLogic {
 }
 
 protocol LoginDataStore {
-    //var name: String { get set }
+    var userData: User? { get set }
 }
 
 class LoginInteractor: LoginBusinessLogic, LoginDataStore {
@@ -25,7 +25,6 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore {
     var userData: User?
     var presenter: LoginPresentationLogic?
     var worker: LoginWorker?
-    //var name: String = ""
     
     // MARK: Do something
         

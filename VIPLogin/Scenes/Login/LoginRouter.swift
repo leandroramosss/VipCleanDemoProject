@@ -26,32 +26,29 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing {
     
     // MARK: Routing
     
-    func routeToRegister(segue: UIStoryboardSegue?)
-    {
-      if let segue = segue {
-        let destinationVC = segue.destination as! RegisterViewController
-        var destinationDS = destinationVC.router!.dataStore!
-//        passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-      } else {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-        var destinationDS = destinationVC.router!.dataStore!
-//        passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-        navigateToRegister(source: viewController!, destination: destinationVC)
-      }
+    func routeToRegister(segue: UIStoryboardSegue?) {
+        if let segue = segue {
+            let destinationVC = segue.destination as! RegisterViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToRegister(source: dataStore!, destination: &destinationDS)
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToRegister(source: dataStore!, destination: &destinationDS)
+            navigateToRegister(source: viewController!, destination: destinationVC)
+        }
     }
     
     // MARK: Navigation
     
-    func navigateToRegister(source: LoginViewController, destination: RegisterViewController)
-    {
-      source.show(destination, sender: nil)
+    func navigateToRegister(source: LoginViewController, destination: RegisterViewController) {
+        source.show(destination, sender: nil)
     }
     
     // MARK: Passing data
     
-    //func passDataToSomewhere(source: LoginDataStore, destination: inout SomewhereDataStore)
-    //{
-    //  destination.name = source.name
-    //}
+    func passDataToRegister(source: LoginDataStore, destination: inout RegisterDataStore) {
+        destination.userData = source.userData
+    }
 }

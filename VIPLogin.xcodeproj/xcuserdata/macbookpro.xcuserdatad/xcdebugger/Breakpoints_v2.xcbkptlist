@@ -30,10 +30,10 @@
             filePath = "VIPLogin/Scenes/Login/LoginInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "startLoginRequest(request:)"
-            landmarkType = "7">
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,10 +46,10 @@
             filePath = "VIPLogin/Scenes/Login/LoginInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "startLoginRequest(request:)"
-            landmarkType = "7">
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,10 +78,10 @@
             filePath = "VIPLogin/Scenes/Login/LoginInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "startLoginRequest(request:)"
-            landmarkType = "7">
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,10 +94,10 @@
             filePath = "VIPLogin/Scenes/Login/LoginInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "startLoginRequest(request:)"
-            landmarkType = "7">
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -9,4 +9,5 @@ import Foundation
 
 extension Constants.Indentifiers {
     static let loginSegue = "loginSegue"
+    static let mainPage = "mainPage"
 }

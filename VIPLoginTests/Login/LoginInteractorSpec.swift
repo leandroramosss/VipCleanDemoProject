@@ -72,7 +72,6 @@ class LoginInteractorSpec: XCTestCase {
         interactorSpy.startLoginRequest(request: LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "123"))
     }
     
-    
 }
 
 

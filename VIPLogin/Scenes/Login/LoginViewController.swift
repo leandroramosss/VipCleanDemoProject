@@ -91,7 +91,7 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     }
     
     func transitionToMain() {
-        self.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: self)
+        self.performSegue(withIdentifier: Constants.Indentifiers.mainPage, sender: self)
     }
 
 }

@@ -20,10 +20,10 @@ enum LoginModel {
             let email: String?
             let password: String?
             
-            func getBody() -> Data {
+            func getBody() -> Data? {
                 let data = ["email": email, "password": password]
                 let jsonData = try? JSONSerialization.data(withJSONObject: data)
-                return jsonData!
+                return jsonData
             }
             
         }

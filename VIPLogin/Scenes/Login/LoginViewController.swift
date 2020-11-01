@@ -70,7 +70,10 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     // MARK: Do something
     
     //@IBOutlet weak var nameTextField: UITextField!
-        
+    @IBAction func buttonAction(_ sender: Any) {
+        self.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: self)
+    }
+    
     func doLogin() {
         let request = LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "123456")
         interactor?.startLoginRequest(request: request)

@@ -23,6 +23,9 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     var interactor: LoginBusinessLogic?
     var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     // MARK: Object lifecycle
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -75,8 +78,12 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     }
     
     func doLogin() {
-        let request = LoginModel.Fetch.Request(email: "leandro@mailinator.com", password: "123456")
+        let request = LoginModel.Fetch.Request(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
         interactor?.startLoginRequest(request: request)
+    }
+    
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: Constants.Indentifiers.loginSegue, sender: self)
     }
     
     func getData(viewModel: LoginModel.Fetch.ViewModel) {

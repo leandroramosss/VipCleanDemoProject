@@ -19,6 +19,7 @@
                         <viewLayoutGuide key="safeArea" id="1Dh-c9-NTs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6Ew-36-vgC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4c-jl-h9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,21 +33,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgn-R4-mfn">
-                                <rect key="frame" x="184" y="159" width="46" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgn-R4-mfn">
+                                <rect key="frame" x="170" y="538" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KDI-Fg-HZp"/>
+                                    <constraint firstAttribute="width" constant="74" id="Yzp-2R-IBM"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vvt-ra-7bl"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wci-wz-KlT">
+                                <rect key="frame" x="20" y="428" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rJX-bM-bPw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-aN-3sv">
+                                <rect key="frame" x="20" y="483" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OLw-xH-4hY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="wEC-EL-uTh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmS-WQ-PaW">
+                                <rect key="frame" x="170" y="576" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="LNy-u9-QD2"/>
+                                    <constraint firstAttribute="height" constant="30" id="pxA-Jf-ytT"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eox-og-kFH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="Wci-wz-KlT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="33V-N5-BQA"/>
+                            <constraint firstItem="cgn-R4-mfn" firstAttribute="top" secondItem="NfF-aN-3sv" secondAttribute="bottom" constant="15" id="4NA-Og-aeY"/>
+                            <constraint firstItem="cgn-R4-mfn" firstAttribute="centerX" secondItem="NfF-aN-3sv" secondAttribute="centerX" id="8A9-HF-Lpe"/>
+                            <constraint firstItem="Wci-wz-KlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8DF-aE-Uhe"/>
+                            <constraint firstItem="Wci-wz-KlT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HYF-lv-trb"/>
+                            <constraint firstItem="cgn-R4-mfn" firstAttribute="centerX" secondItem="AmS-WQ-PaW" secondAttribute="centerX" id="Hg4-SW-MzT"/>
+                            <constraint firstItem="NfF-aN-3sv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NRj-JL-Twb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wci-wz-KlT" secondAttribute="trailing" constant="20" id="WAR-dS-vH1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NfF-aN-3sv" secondAttribute="trailing" constant="20" id="enA-aU-eVm"/>
+                            <constraint firstItem="NfF-aN-3sv" firstAttribute="top" secondItem="Wci-wz-KlT" secondAttribute="bottom" constant="15" id="g1j-El-X5h"/>
+                            <constraint firstItem="AmS-WQ-PaW" firstAttribute="top" secondItem="cgn-R4-mfn" secondAttribute="bottom" constant="8" id="xxY-G4-LlC"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="Wci-wz-KlT" id="epY-Z8-qqR"/>
+                        <outlet property="passwordTextField" destination="NfF-aN-3sv" id="1fp-as-lNA"/>
                         <segue destination="ytF-GJ-d2V" kind="show" identifier="loginSegue" id="w3q-ao-V6K"/>
-                        <segue destination="lMJ-Or-jWW" kind="showDetail" identifier="mainPage" id="L8H-aY-Qkb"/>
+                        <segue destination="lMJ-Or-jWW" kind="presentation" identifier="mainPage" id="L8H-aY-Qkb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,6 +122,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
